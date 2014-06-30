@@ -1,0 +1,10 @@
+<h1>Fish Homepage</h1>
+
+<ol>
+  <% @fishes.each_with_index do |fish, index| %>
+
+    <li><a href="/fish/<%= index %>"><%= fish[:full_name] %></a></li>
+
+  <% end %>
+</ol>
+
